@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PCMaster — ремонт компьютеров и ноутбуков, установка Windows, настройка программ и обслуживание ПК.">
+  <meta name="theme-color" content="#0b1525">
+  <title>PCMaster — ремонт компьютеров и ноутбуков</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#home" aria-label="PCMaster — главная">
+        <span class="logo-icon">▣</span>
+        <span>PCMaster<small>Ремонт компьютеров</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Открыть меню" aria-expanded="false"
+        aria-controls="navLinks">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="button button-small nav-cta" href="#contacts">
+        Связаться <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow eyebrow-dark">
+          Быстро <span>•</span> Качественно <span>•</span> Надёжно
+        </span>
+
+        <h1>
+          Профессиональный
+          <span>ремонт компьютеров</span>
+          и ноутбуков
+        </h1>
+
+        <p class="hero-description">
+          Устраняем неисправности, настраиваем систему
+          и помогаем подобрать оптимальное решение
+          для дома и бизнеса.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="#contacts">⚒ Оставить заявку</a>
+          <a class="button button-outline" href="#services">Наши услуги</a>
+        </div>
+
+        <div class="hero-facts">
+          <div class="fact">
+            <span class="fact-icon">⌂</span>
+            <span>Выезд на дом<small>по договорённости</small></span>
+          </div>
+          <div class="fact">
+            <span class="fact-icon">◷</span>
+            <span>Диагностика<small>от 0 ₽*</small></span>
+          </div>
+          <div class="fact">
+            <span class="fact-icon">⬡</span>
+            <span>Гарантия<small>по условиям заказа</small></span>
+          </div>
+        </div>
+        <p class="demo-note">*Условия указаны для демонстрационного проекта.</p>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Наши услуги</span>
+          <h2>Чем мы можем помочь</h2>
+          <p>От простой настройки до комплексного обслуживания компьютера.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-visual laptop-visual" aria-hidden="true">💻</div>
+            <div class="service-body">
+              <span class="service-number">01 / Ремонт</span>
+              <h3>Ремонт ноутбуков</h3>
+              <p>Диагностика неисправностей, очистка от пыли и решение проблем с перегревом.</p>
+              <div class="service-bottom">
+                <span class="price">от 1 000 ₽</span>
+                <button class="round-button choose-service"
+                  type="button" data-service="Ремонт ноутбуков"
+                  aria-label="Заказать ремонт ноутбука">↗</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual pc-visual" aria-hidden="true">🖥️</div>
+            <div class="service-body">
+              <span class="service-number">02 / Обслуживание</span>
+              <h3>Ремонт компьютеров</h3>
+              <p>Поиск неисправностей, замена комплектующих и помощь со сборкой ПК.</p>
+              <div class="service-bottom">
+                <span class="price">от 800 ₽</span>
+                <button class="round-button choose-service"
+                  type="button" data-service="Ремонт компьютеров"
+                  aria-label="Заказать ремонт компьютера">↗</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-visual software-visual" aria-hidden="true">⚙️</div>
+            <div class="service-body">
+              <span class="service-number">03 / Программное обеспечение</span>
+              <h3>Настройка программ</h3>
+              <p>Установка и настройка программ, драйверов и обновлений системы.</p>
+              <div class="service-bottom">
+                <span class="price">от 500 ₽</span>
+                <button class="round-button choose-service"
+                  type="button" data-service="Настройка программ"
+                  aria-label="Заказать настройку программ">↗</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="demo-note">Цены примерные. Перед публикацией замени их на реальные.</p>
+      </div>
+    </section>
+
+    <section class="section advantages" id="advantages">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Наши преимущества</span>
+          <h2>Почему выбирают нас</h2>
+        </div>
+
+        <div class="advantages-grid">
+          <article class="advantage">
+            <div class="advantage-icon">ϟ</div>
+            <div><h3>Оперативность</h3>
+              <p>Согласуем сроки и сообщим о ходе работ.</p></div>
+          </article>
+          <article class="advantage">
+            <div class="advantage-icon">✓</div>
+            <div><h3>Ответственность</h3>
+              <p>Объясним причину неисправности и варианты решения.</p></div>
+          </article>
+          <article class="advantage">
+            <div class="advantage-icon">₽</div>
+            <div><h3>Прозрачная цена</h3>
+              <p>Согласуем стоимость до начала дополнительных работ.</p></div>
+          </article>
+          <article class="advantage">
+            <div class="advantage-icon">♡</div>
+            <div><h3>Личный подход</h3>
+              <p>Подберём решение под ваши задачи и бюджет.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Отзывы</span>
+          <h2>Что говорят клиенты</h2>
+          <p>Примеры оформления отзывов для демонстрации дизайна.</p>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="review-top">
+              <div class="avatar">А</div>
+              <div><h3>Алексей</h3><span>Пример отзыва</span></div>
+              <span class="stars" aria-label="5 из 5">★★★★★</span>
+            </div>
+            <p>«Ноутбук стал сильно нагреваться. После обслуживания проблема исчезла».</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-top">
+              <div class="avatar">М</div>
+              <div><h3>Мария</h3><span>Пример отзыва</span></div>
+              <span class="stars" aria-label="5 из 5">★★★★★</span>
+            </div>
+            <p>«Помогли установить нужные программы и объяснили, как ими пользоваться».</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-top">
+              <div class="avatar">И</div>
+              <div><h3>Игорь</h3><span>Пример отзыва</span></div>
+              <span class="stars" aria-label="5 из 5">★★★★★</span>
+            </div>
+            <p>«Подсказали, как решить проблему с компьютером, и заранее объяснили стоимость».</p>
+          </article>
+        </div>
+        <p class="demo-note">Отзывы вымышленные — не выдавай их за реальные.</p>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <span class="eyebrow eyebrow-dark">Контакты</span>
+          <h2>Расскажите о своей проблеме</h2>
+          <p>Оставьте заявку — обсудим задачу, стоимость и возможные сроки.</p>
+
+          <div class="contact-detail">
+            <span class="contact-icon">☎</span>
+            <div><strong>Телефон</strong>
+              <a href="tel:+79991234567">+7 (999) 123-45-67</a></div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-icon">✉</span>
+            <div><strong>Электронная почта</strong>
+              <a href="mailto:pcmaster@example.com">pcmaster@example.com</a></div>
+          </div>
+          <p class="demo-note">Контакты демонстрационные. Замени их своими.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h3>Заявка на обслуживание</h3>
+
+          <label for="name">Ваше имя</label>
+          <input id="name" name="name" type="text"
+            placeholder="Как к вам обращаться"
+            autocomplete="name" required minlength="2" maxlength="60">
+
+          <label for="phone">Телефон или способ связи</label>
+          <input id="phone" name="phone" type="text"
+            placeholder="+7... или @username"
+            autocomplete="tel" required maxlength="100">
+
+          <label for="service">Какая услуга нужна?</label>
+          <select id="service" name="service" required>
+            <option value="">Выберите услугу</option>
+            <option>Ремонт ноутбуков</option>
+            <option>Ремонт компьютеров</option>
+            <option>Настройка программ</option>
+            <option>Другая задача</option>
+          </select>
+
+          <label for="message">Опишите проблему</label>
+          <textarea id="message" name="message"
+            placeholder="Что случилось с устройством?"
+            rows="4" maxlength="1000" required></textarea>
+
+          <button class="button submit-button" type="submit">
+            Подготовить заявку <span aria-hidden="true">↗</span>
+          </button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite">
+            Демо-форма: заявка будет подготовлена в почтовой программе.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="logo logo-footer" href="#home">
+        <span class="logo-icon">▣</span>
+        <span>PCMaster<small>Ремонт компьютеров</small></span>
+      </a>
+      <p>© <span id="year"></span> PCMaster. Учебный проект.</p>
+      <a href="#home">Наверх ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
